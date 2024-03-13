@@ -13,9 +13,6 @@ jobs:
         node-version: '20.3.x'
         cache: 'npm'
     - uses: ArtiomTr/jest-coverage-report-action@v2
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        jest_coverage_report_path: 'coverage/lcov-report/index.html'
     - run: npm ci
     - run: npm test
     - run: npm run lint
