@@ -16,4 +16,3 @@ jobs:
     - run: npm test
     - run: npm run lint
     - run: npm audit
-    - uses: ArtiomTr/jest-coverage-report-action@v2
